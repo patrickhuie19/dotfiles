@@ -1,4 +1,5 @@
 # Makefile
+SHELL := /bin/zsh
 
 clean:
 	# Backup
@@ -20,5 +21,5 @@ install:
 
 	# Source the changes
 	source ~/.zshrc
-	tmux source-files ~/.tmux.conf`
-	echo "Dotfiles updated and sourced!"`
+	tmux source-file ~/.tmux.conf
+	echo "Dotfiles updated and sourced!"
